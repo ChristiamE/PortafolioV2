@@ -1,0 +1,22 @@
+.titulos(@size, @peso: 400) {
+  font-family: @fuente-titulos;
+  font-size: @size;
+  font-weight: @peso;
+}
+.flex(@gap: 0, @align: center) {
+  display: flex;
+  align-items: @align;
+  gap: @gap;
+}
+.caja(@fondo-caja: @panel, @radio: 6px) {
+  background-color: @fondo-caja;
+  border: 1px solid @linea;
+  border-radius: @radio;
+}
+.esquina(@lado-v, @lado-h, @tam, @grosor, @color) {
+  position: absolute;
+  width: @tam;
+  height: @tam;
+  border-@{lado-v}: @grosor solid @color;
+  border-@{lado-h}: @grosor solid @color;
+}

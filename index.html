@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portafolio de Christiam, estudiante de Ingeniería en Ciencias de la Computación en UNICAH. Proyectos de desarrollo web, sistemas embebidos y bases de datos.">
+  <title>Christiam — Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="encabezado">
+    <div class="navegacion">
+      <a href="#inicio" class="logo">christiam<span class="cursor-parpadeo">_</span></a>
+      <button class="boton-menu" id="botonMenu" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="menu-principal" id="menuPrincipal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="contenedor">
+        <div class="texto-hero">
+          <p class="etiqueta-estado">
+            <span class="led"></span>
+            Disponible para proyectos y prácticas
+          </p>
+          <h1>
+            Hola, soy Christiam.<br>
+            <span class="rol-dinamico" id="rolDinamico">Desarrollo web</span>
+          </h1>
+          <p class="descripcion">
+            Estudiante de Ingeniería en Ciencias de la Computación en UNICAH, Honduras.
+            Construyo interfaces web, sistemas embebidos y modelos de datos, siempre
+            entendiendo cómo funciona cada capa del proyecto.
+          </p>
+          <div class="grupo-botones">
+            <a href="#proyectos" class="boton">Ver proyectos</a>
+            <a href="#contacto" class="boton boton-secundario">Contactar</a>
+          </div>
+        </div>
+        <div class="marco-foto">
+          <div class="foto-interior">
+            <img src="/img/profile.jpeg" alt="Foto de perfil de Christiam" id="fotoPerfil">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre-mi" id="sobre-mi">
+      <div class="contenedor">
+        <div>
+          <div class="encabezado-seccion">
+            <span class="via"></span>
+            <h2>Sobre mí</h2>
+            <span class="linea-traza"></span>
+          </div>
+          <p>
+            Curso Ingeniería en Ciencias de la Computación en UNICAH, donde combino
+            materias de electrónica digital, desarrollo web y sistemas embebidos.
+            Me interesa entender un proyecto de extremo a extremo: desde el circuito
+            que capta una señal hasta la interfaz que la muestra al usuario.
+          </p>
+          <p>
+            He trabajado en proyectos individuales y en equipo que van desde sitios
+            web con lógica en JavaScript puro hasta prototipos con sensores y
+            microcontroladores, además de ejercicios de diseño de bases de datos
+            multidimensionales.
+          </p>
+        </div>
+        <div class="lista-enfoque">
+          <div class="item-enfoque">
+            <span class="icono">🖥️</span>
+            <div>
+              <h3>Desarrollo web</h3>
+              <p>HTML, CSS y JavaScript para construir sitios funcionales y accesibles.</p>
+            </div>
+          </div>
+          <div class="item-enfoque">
+            <span class="icono">🔌</span>
+            <div>
+              <h3>Sistemas embebidos</h3>
+              <p>Arduino, sensores y lógica digital aplicada a prototipos reales.</p>
+            </div>
+          </div>
+          <div class="item-enfoque">
+            <span class="icono">🗄️</span>
+            <div>
+              <h3>Bases de datos</h3>
+              <p>Modelado relacional y multidimensional orientado a análisis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <span class="via"></span>
+          <h2>Proyectos</h2>
+          <span class="linea-traza"></span>
+        </div>
+        <div class="cuadricula-proyectos">
+          <article class="tarjeta-proyecto">
+            <p class="categoria-proyecto">Desarrollo web</p>
+            <h3>Hospital Vida y Salud</h3>
+            <p>
+              Sitio web multipágina para un hospital ficticio, construido en equipo.
+              Incluye un flujo completo de solicitud de citas con almacenamiento en
+              sessionStorage, validación de teléfono hondureño y generación de un
+              comprobante imprimible.
+            </p>
+            <div class="tecnologias-proyecto">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="enlaces-proyecto">
+              <a href="https://github.com/tu-usuario/hospital-vida-salud" target="_blank"
+                rel="noopener noreferrer">Repositorio</a>
+              <a href="https://tu-usuario.github.io/hospital-vida-salud/" target="_blank"
+                rel="noopener noreferrer">Demo</a>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <p class="categoria-proyecto">Sistemas embebidos</p>
+            <h3>Control de acceso RFID + huella dactilar</h3>
+            <p>
+              Sistema de autenticación de dos factores combinando un lector RFID
+              RC522 y un sensor de huella AS608, con pantalla LCD 16×2 sobre Arduino.
+              Incluye propuesta de proyecto con tabla de componentes y lógica de
+              autenticación.
+            </p>
+            <div class="tecnologias-proyecto">
+              <span>Arduino</span>
+              <span>C++</span>
+              <span>RFID</span>
+              <span>Biometría</span>
+            </div>
+            <div class="enlaces-proyecto">
+              <a href="https://github.com/tu-usuario/control-acceso-rfid" target="_blank"
+                rel="noopener noreferrer">Repositorio</a>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <p class="categoria-proyecto">Bases de datos</p>
+            <h3>Almacén de datos — supermercado</h3>
+            <p>
+              Diseño de un almacén de datos multidimensional para una cadena de
+              supermercados: 7 dimensiones y 4 tablas de hechos (ventas, compras,
+              inventario y mermas), con diagrama ERD y consultas SQL.
+            </p>
+            <div class="tecnologias-proyecto">
+              <span>SQL</span>
+              <span>Modelado dimensional</span>
+              <span>ERD</span>
+            </div>
+            <div class="enlaces-proyecto">
+              <a href="https://github.com/tu-usuario/almacen-datos-supermercado" target="_blank"
+                rel="noopener noreferrer">Repositorio</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <span class="via"></span>
+          <h2>Habilidades</h2>
+          <span class="linea-traza"></span>
+        </div>
+        <div class="cuadricula-habilidades">
+          <div class="grupo-habilidad">
+            <h3>Frontend</h3>
+            <div class="etiquetas-habilidad">
+              <span class="etiqueta">HTML5</span>
+              <span class="etiqueta">CSS3</span>
+              <span class="etiqueta">JavaScript</span>
+            </div>
+          </div>
+          <div class="grupo-habilidad">
+            <h3>Sistemas embebidos</h3>
+            <div class="etiquetas-habilidad">
+              <span class="etiqueta">Arduino</span>
+              <span class="etiqueta">C / C++</span>
+              <span class="etiqueta">Electrónica digital</span>
+            </div>
+          </div>
+          <div class="grupo-habilidad">
+            <h3>Datos</h3>
+            <div class="etiquetas-habilidad">
+              <span class="etiqueta">SQL</span>
+              <span class="etiqueta">Modelado dimensional</span>
+            </div>
+          </div>
+          <div class="grupo-habilidad">
+            <h3>Herramientas</h3>
+            <div class="etiquetas-habilidad">
+              <span class="etiqueta">Git</span>
+              <span class="etiqueta">GitHub</span>
+              <span class="etiqueta">VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contenedor">
+        <div>
+          <div class="encabezado-seccion">
+            <span class="via"></span>
+            <h2>Contacto</h2>
+            <span class="linea-traza"></span>
+          </div>
+          <p class="descripcion">
+            ¿Tienes un proyecto, una práctica o simplemente quieres platicar de
+            tecnología? Escríbeme por cualquiera de estos medios.
+          </p>
+        </div>
+        <ul class="lista-contacto">
+          <li>
+            <span class="rotulo">Correo</span>
+            <span class="valor" id="valorCorreo">
+              chre_espinalg16@unicah.edu</span>
+            <button class="boton-copiar" id="botonCopiarCorreo" type="button">Copiar</button>
+          </li>
+          <li>
+            <span class="rotulo">GitHub</span>
+            <a class="valor" href="https://github.com/ChristiamE" target="_blank"
+              rel="noopener noreferrer">github.com/ChristiamE</a>
+          </li>
+          <li>
+            <span class="rotulo">Ubicación</span>
+            <span class="valor">Tegucigalpa, Honduras</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <p>&copy; <span id="anioActual"></span> Christiam. Proyecto académico — UNICAH.</p>
+      <div class="enlaces-repo">
+        <a href="https://github.com/tu-usuario/portafolio" target="_blank" rel="noopener noreferrer">Repositorio del
+          portafolio</a>
+        <a href="https://tu-usuario.github.io/portafolio/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="botonArriba" class="boton-arriba" type="button" aria-label="Volver al inicio de la página">
+    ↑
+  </button>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

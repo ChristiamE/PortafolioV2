@@ -1,0 +1,35 @@
+@media (max-width: @bp-tablet) {
+  .hero .contenedor { grid-template-columns: 1fr; }
+  .marco-foto { max-width: 220px; order: -1; }
+  .sobre-mi .contenedor,
+  .contacto .contenedor { grid-template-columns: 1fr; }
+}
+
+@media (max-width: @bp-movil) {
+  .boton-menu { display: flex; }
+
+  .menu-principal {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: @panel;
+    border-bottom: 1px solid @linea;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+
+    &.menu-abierto { max-height: 320px; }
+
+    ul { flex-direction: column; gap: 0; padding: 8px 28px 20px; }
+    li { padding: 12px 0; border-bottom: 1px solid @linea; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
