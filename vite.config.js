@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import purgecss from '@fullhuman/postcss-purgecss';
 
 export default defineConfig({
-  base: '/portafolio/',
+  base: '/PortafolioV2/',
   css: {
     postcss: {
       plugins: [
